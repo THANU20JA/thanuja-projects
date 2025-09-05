@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>THANUJA V| Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanuja V | Portfolio</title>
+  <meta name="description" content="Portfolio of Thanuja V, a Fresher Data Analyst and BCA Graduate.">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>THANUJA V</h1>
-      <p>FRESHER-DATA ANALYST|BCA GRADUATE|ENTRY-LEVEL ANALYST</p>
+      <h1>Thanuja V</h1>
+      <p>Fresher Data Analyst | BCA Graduate | Entry-Level Analyst</p>
       <nav>
-        <a href="#about">About</a>
+        <a href="#introduction">Introduction</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#about">about</a>
-        <a href="#contact">contact</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <div class="social-icons">
+       <!-- Email -->
+        <a href="mailto:thanu230511@gmail.com">
+          <img src="contact/email.png" alt="Email" width="30">
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/thanuja-v-a4b9a831b" target="_blank">
+          <img src="contact/linkedin.png" alt="LinkedIn" width="30">
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/THANU20JA/thanuja-projects.git" target="_blank">
+          <img src="contact/github.png" alt="GitHub" width="30">
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6374444761" target="_blank">
+          <img src="contact/WHATSAPP.png" alt="WhatsApp" width="30">
+        </a>
+      </div>
     </div>
   </header>
 
-  <section id="my introduction">
+  <main>
+  <section id="introduction">
     <div class="container">
-      <h2>INTRO ,MYSELF IM</h2>
+      <h2>Introduction</h2>
       <p>
-        I’m a recent BCA graduate with a strong interest bin data analytics and problem-solving.i have hands-on practice with EXCEL,SQL, and POWER BI,and im excited to start my journey as a junior analyst.I beleive in continous learning,staying curious,and turning numbers into narratives
+        I’m a recent BCA graduate with a strong interest in data analytics and problem-solving. I have hands-on experience with Excel, SQL, and Power BI, and I'm excited to start my journey as a junior analyst. I believe in continuous learning, staying curious, and turning numbers into narratives.
       </p>
     </div>
   </section>
@@ -34,69 +58,73 @@
       <h2>PROJECTS</h2>
 
       <div class="project">
-        <h3>Personal Portfolio Website</h3>
-        <p>A responsive portfolio to showcase my projects and skills.</p>
-        <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
-        <a href="#">View Project</a>
+        <div class="project-card">
+          <h3>Big Manual Optimizing Form</h3>
+          <p>A responsive working model of a form for metadata optimization.</p>
+          <p><strong>Tech Stack:</strong> Advanced Excel, Macros, Developer Tags</p>
+          <a href="projects/project/">View Project</a>
+        </div>
       </div>
 
       <div class="project">
-        <h3>Task Manager App</h3>
-        <p>A simple to-do list with persistent storage.</p>
-        <p><strong>Tech Stack:</strong> JavaScript, LocalStorage</p>
-        <a href="#">View Project</a>
+        <div class="project-card">
+          <h3>Data Analyst Dashboard</h3>
+          <p>Using pivot tables, shapes, and analyzing data for insights.</p>
+          <p><strong>Tech Stack:</strong> Advanced Excel, Pivot Tables, Macros, Filtering, Sorting</p>
+          <a href="projects/project1/">View Project</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-card">
+          <h3>Python Guess Game</h3>
+          <p>Using if conditions, looping, and the random function for a guessing game.</p>
+          <p><strong>Tech Stack:</strong> Python Logic and Functions</p>
+          <a href="projects/project3/">View Project</a>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="skills">
     <div class="container">
-      <h2>SKILLS</h2>
+      <h2>Skills</h2>
       <ul>
-        <li>python </li>
-        <li>excel</li>
+        <li>Python</li>
+        <li>Excel</li>
         <li>SQL</li>
-        <li>POWER BI</li>
-        <h2>SOFT SKILLS</h2>
+        <li>Power BI</li>
+      </ul>
+      <h2>Soft Skills</h2>
       <ul>
-        <li>COMMUNICATION</li>
-        <li>attention to detail</li>
-        <li>teamwork</li>
-        </ul></l>
+        <li>Communication</li>
+        <li>Attention to Detail</li>
+        <li>Teamwork</li>
       </ul>
     </div>
   </section>
 
-  <section id="about">
-    <div class="container">                          
-      <h2>ABOUT</h2>
-      <p>Email:  <a href="#">thanu230511@gmail.com</a></p>
-      <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-      <p>GitHub: <a href="#">github.com/yourusername</a></p>
+  <section id="contact">
+    <div class="form-wrapper">
+      <form action="https://formspree.io/f/xqadgoar" method="post">
+        <h2>Let's Connect</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
     </div>
   </section>
-   <section id="contact">
-   <div class="container">
-    <h2>CONTACT ME</h2>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <label for="email"> your Email:</label><br />
-    <input type="email" id="email" name="email" required /><br /><br />
-  
-    <label for="name">your name:</label><br />
-    <input type="name" id="name" name="name" required /><br /><br />
-  
-    <label for="message">Message:</label><br />
-    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
-  
-    <button type="submit">Send Message</button>
-  </form>
-  </div>
-  </section>
-  
+  </main>
 
   <footer>
-    <p> BY thanuja</p> THANK YOU FOR VISITING👍✔.</p>
+    <p>Thank you for visiting my portfolio! Let's connect and create something amazing together. © Thanuja V</p>
   </footer>
 </body>
 </html>
-
