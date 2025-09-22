@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Guess Game - Thanuja V</title>
+  <link rel="stylesheet" href="../../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Python Guess Game</h1>
+      <p>Back to <a href="../../index.html">Portfolio</a></p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="container">
+        <h2>Project Description</h2>
+        <p>A fun and interactive Python console-based guessing game! The computer randomly selects a number between 1 and 100, and the user has to guess it. The program provides helpful feedback and tracks the number of attempts. Features include input validation, quit options, and a user-friendly interface.</p>
+        <p><strong>Tech Stack:</strong> Python Logic, Functions, Error Handling, Random Module</p>
+
+        <h2>Key Features</h2>
+        <ul>
+          <li>Random number generation (1-100)</li>
+          <li>Input validation and error handling</li>
+          <li>Attempt counter</li>
+          <li>Quit option (type 'quit', 'exit', or 'q')</li>
+          <li>User-friendly messages and emojis</li>
+          <li>Keyboard interrupt handling</li>
+        </ul>
+
+        <h2>Source Code</h2>
+        <pre><code>"""
+Python Number Guessing Game
+A simple console-based game where the user guesses a randomly generated number.
+"""
+
+from random import randrange
+
+def play_guessing_game():
+    """
+    Main function to play the number guessing game.
+    The computer generates a random number between 1 and 100,
+    and the user has to guess it.
+    """
+    # Generate a random number between 1 and 100
+    computer_guess = randrange(1, 100)
+    attempts = 0
+
+    print("🎯 Welcome to the Number Guessing Game!")
+    print("I've selected a number between 1 and 100.")
+    print("Try to guess it!")
+
+    while True:
+        try:
+            # Get user input
+            user_input = input("\nEnter your guess (1-100): ")
+
+            # Check if user wants to quit
+            if user_input.lower() in ['quit', 'exit', 'q']:
+                print(f"Game over! The number was {computer_guess}.")
+                break
+
+            # Convert input to integer
+            user_guess = int(user_input)
+            attempts += 1
+
+            # Check the guess
+            if user_guess < computer_guess:
+                print("📉 Too low! Try a higher number.")
+            elif user_guess > computer_guess:
+                print("📈 Too high! Try a lower number.")
+            else:
+                print(f"🎉 Congratulations! You guessed it right!")
+                print(f"It took you {attempts} attempts.")
+                break
+
+        except ValueError:
+            print("❌ Please enter a valid number between 1 and 100.")
+        except KeyboardInterrupt:
+            print(f"\nGame interrupted! The number was {computer_guess}.")
+            break
+
+def main():
+    """Main function to run the game."""
+    print("=" * 50)
+    play_guessing_game()
+    print("=" * 50)
+
+if __name__ == "__main__":
+    main()</code></pre>
+
+        <h2>How to Run</h2>
+        <p>To run this Python game:</p>
+        <ol>
+          <li>Open a terminal or command prompt</li>
+          <li>Navigate to the project directory: <code>cd projects/project3</code></li>
+          <li>Run the Python file: <code>python app.py</code></li>
+          <li>Follow the on-screen instructions to play!</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Download Files</h2>
+        <p>Click the buttons below to download the project files:</p>
+        <a href="app.py" download>
+          <button>Download Python Code</button>
+        </a>
+        <a href="../../projects/project1/option.xlsx.xlsx" download>
+          <button>Download Sample Excel File</button>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Thanuja V</p>
+  </footer>
+</body>
+</html>
